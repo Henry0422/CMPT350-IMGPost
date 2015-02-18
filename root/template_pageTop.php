@@ -19,6 +19,6 @@
    </li>
    <li><a href='#'><span>About</span></a></li>
    <li class='last'><a href='#'><span>Contact</span></a></li>
-   <li class='last'><a href='#'><span>Sign UP / Log In</span></a></li>
+   <li class='last'><a href='/sign_up/signup.html'><span>Sign UP / Log In</span></a></li>
 </ul>
 </div>

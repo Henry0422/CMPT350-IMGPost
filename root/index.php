@@ -11,9 +11,9 @@
 </head>
 <body>
 
-<?php include_once("template_pageTop.php"); ?>
-
+    <?php include_once("template_pageTop.php"); ?>
     <div id='pageMiddle'></div>
-    <div id='pageBottom'></div>
+    <?php include_once("template_pageBottom.php"); ?>
+    
 </body>
 <html>
