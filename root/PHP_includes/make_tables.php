@@ -4,7 +4,10 @@ include_once("db_connect.php");
 
 
 //Create friends users
-$tbl_users = "CREATE TABLE users (
+//Avatar is the profile picture name
+//notescheck is for notifications
+//no two user can have same id or username or email
+$tbl_users = "CREATE TABLE IF NOT EXISTS users (
                 id INT(11) NOT NULL AUTO_INCREMENT,
                 username VARCHAR(16) NOT NULL,
                 password VARCHAR(255) NOT NULL,
@@ -17,7 +20,7 @@ $tbl_users = "CREATE TABLE users (
                 signup DATETIME NOT NULL,
                 lastlogin DATETIME NOT NULL,
                 notescheck DATETIME NOT NULL,
-                activatied ENUM('0','1') NOT NULL DEFAULT '0',
+                activated ENUM('0','1') NOT NULL DEFAULT '0',
                 PRIMARY KEY (id),
                 UNIQUE KEY username (username,email)
              )";
@@ -33,6 +36,7 @@ else{
 
 
 //Create useroptions table
+//Used for change password
 $tbl_useroptions = "CREATE TABLE IF NOT EXISTS useroptions (
                     id INT(11) NOT NULL AUTO_INCREMENT,
                     username VARCHAR(16) NOT NULL,
@@ -90,15 +94,6 @@ if ($query === TRUE){
 else{
     echo "<h3>blockedusers table NOT created</h3>";
 }
-
-
-
-//Create status table
-
-//$tbl_status = "CREATE TABLE IF NOT EXISTS status (
-//                    id INT(11) NOT NULL AUTO_INCREMENT,
-//               )";
-
 
 
 //Create photos table
