@@ -1,5 +1,5 @@
 <?php
-include_once("php_includes/check_login_status.php");
+include_once("check_login_status.php");
 // If user is already logged in, header that weenis away
 if($user_ok == true){
 	header("location: user.php?u=".$_SESSION["username"]);
@@ -8,9 +8,10 @@ if($user_ok == true){
 ?><?php
 // AJAX CALLS THIS CODE TO EXECUTE
 if(isset($_POST["e"])){
-	$e = mysqli_real_escape_string($db_conx, $_POST['e']);
+	include_once("php_includes/db_connect.php");
+	$e = mysqli_real_escape_string($db_connect, $_POST['e']);
 	$sql = "SELECT id, username FROM users WHERE email='$e' AND activated='1' LIMIT 1";
-	$query = mysqli_query($db_conx, $sql);
+	$query = mysqli_query($db_connect, $sql);
 	$numrows = mysqli_num_rows($query);
 	if($numrows > 0){
 		while($row = mysqli_fetch_array($query, MYSQLI_ASSOC)){
@@ -22,14 +23,14 @@ if(isset($_POST["e"])){
 		$tempPass = "$emailcut$randNum";
 		$hashTempPass = md5($tempPass);
 		$sql = "UPDATE useroptions SET temp_pass='$hashTempPass' WHERE username='$u' LIMIT 1";
-	    $query = mysqli_query($db_conx, $sql);
+	    $query = mysqli_query($db_connect, $sql);
 		$to = "$e";
-		$from = "auto_responder@yoursite.com";
+		$from = "auto_responder@skchn.ca";
 		$headers ="From: $from\n";
 		$headers .= "MIME-Version: 1.0\n";
 		$headers .= "Content-type: text/html; charset=iso-8859-1 \n";
-		$subject ="yoursite Temporary Password";
-		$msg = '<h2>Hello '.$u.'</h2><p>This is an automated message from yoursite. If you did not recently initiate the Forgot Password process, please disregard this email.</p><p>You indicated that you forgot your login password. We can generate a temporary password for you to log in with, then once logged in you can change your password to anything you like.</p><p>After you click the link below your password to login will be:<br /><b>'.$tempPass.'</b></p><p><a href="http://www.yoursite.com/forgot_pass.php?u='.$u.'&p='.$hashTempPass.'">Click here now to apply the temporary password shown below to your account</a></p><p>If you do not click the link in this email, no changes will be made to your account. In order to set your login password to the temporary password you must click the link above.</p>';
+		$subject ="imgpost Temporary Password";
+		$msg = '<h2>Hello '.$u.'</h2><p>This is an automated message from yoursite. If you did not recently initiate the Forgot Password process, please disregard this email.</p><p>You indicated that you forgot your login password. We can generate a temporary password for you to log in with, then once logged in you can change your password to anything you like.</p><p>After you click the link below your password to login will be:<br /><b>'.$tempPass.'</b></p><p><a href="http://www.skchn.ca/forgot_pass.php?u='.$u.'&p='.$hashTempPass.'">Click here now to apply the temporary password shown below to your account</a></p><p>If you do not click the link in this email, no changes will be made to your account. In order to set your login password to the temporary password you must click the link above.</p>';
 		if(mail($to,$subject,$msg,$headers)) {
 			echo "success";
 			exit();
@@ -45,13 +46,14 @@ if(isset($_POST["e"])){
 ?><?php
 // EMAIL LINK CLICK CALLS THIS CODE TO EXECUTE
 if(isset($_GET['u']) && isset($_GET['p'])){
+	include_once("php_includes/db_connect.php");
 	$u = preg_replace('#[^a-z0-9]#i', '', $_GET['u']);
 	$temppasshash = preg_replace('#[^a-z0-9]#i', '', $_GET['p']);
 	if(strlen($temppasshash) < 10){
 		exit();
 	}
 	$sql = "SELECT id FROM useroptions WHERE username='$u' AND temp_pass='$temppasshash' LIMIT 1";
-	$query = mysqli_query($db_conx, $sql);
+	$query = mysqli_query($db_connect, $sql);
 	$numrows = mysqli_num_rows($query);
 	if($numrows == 0){
 		header("location: message.php?msg=There is no match for that username with that temporary password in the system. We cannot proceed.");
@@ -60,9 +62,9 @@ if(isset($_GET['u']) && isset($_GET['p'])){
 		$row = mysqli_fetch_row($query);
 		$id = $row[0];
 		$sql = "UPDATE users SET password='$temppasshash' WHERE id='$id' AND username='$u' LIMIT 1";
-	    $query = mysqli_query($db_conx, $sql);
+	    $query = mysqli_query($db_connect, $sql);
 		$sql = "UPDATE useroptions SET temp_pass='' WHERE username='$u' LIMIT 1";
-	    $query = mysqli_query($db_conx, $sql);
+	    $query = mysqli_query($db_connect, $sql);
 	    header("location: login.php");
         exit();
     }
@@ -110,6 +112,7 @@ function forgotpass(){
 					_("forgotpassform").innerHTML = '<h3>Step 2. Check your email inbox in a few minutes</h3><p>You can close this window or tab if you like.</p>';
 				} else if (response == "no_exist"){
 					_("status").innerHTML = "Sorry that email address is not in our system";
+					_("forgotpassbtn").style.display = "block";
 				} else if(response == "email_send_failed"){
 					_("status").innerHTML = "Mail function failed to execute";
 				} else {
