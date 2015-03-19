@@ -101,7 +101,7 @@ function forgotpass(){
 	        if(ajaxReturn(ajax) == true) {
 				var response = ajax.responseText.trim();
 				if(response == "success"){
-					_("forgotpassform").innerHTML = '<h3>Step 2. Check your email inbox in a few minutes</h3><p>You can close this window or tab if you like.</p>';
+					_("recover").innerHTML = '<h1>Check your email inbox in a few minutes</br>You can close this window or tab if you like.</h1>';
 				} else if (response == "no_exist"){
 					_("status").innerHTML = "Sorry that email address is not in our system";
 					_("status").style.display = "block"
@@ -136,11 +136,10 @@ function restrict(elem){
 </head>
 <body>
 	<div class="form">
-
-		  <ul class="tab-group">
-			<li class="tab active"><a href="#recover">Recover Password</a></li>
-		  </ul>
-
+	
+			<div class="tab-group">
+				<div class="tab active"><a href="#recover">Recover Password</a></div>
+			 </div>
 		  <div class="tab-content">
 			<div id="recover">   
 			  <h1>Generate Temporary Password</h1>
@@ -156,6 +155,8 @@ function restrict(elem){
 				  <button id="forgotpassbtn"  class="button button-block" onclick="forgotpass()"/>Generate Temp Pwd</button>
 				  <span id="status" style="display: none"></span>
 			  </form>
+			</div>
+			<div id="blank">
 			</div>
 
 		  </div><!-- tab-content -->
