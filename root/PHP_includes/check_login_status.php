@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("php_includes/db_connect.php");
+include_once("db_connect.php");
 // Files that inculde this file at the very top would NOT require 
 // connection to database or session_start(), be careful.
 // Initialize some vars
