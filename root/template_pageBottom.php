@@ -1,1 +1,0 @@
-<div id='pageBottom'>&copy;2015 Spot Posting All Right Reserved</div>
