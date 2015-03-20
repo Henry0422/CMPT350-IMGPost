@@ -1,13 +1,3 @@
-<!--php for signin-->
-<?php
-session_start();
-// If user is logged in, header them away
-if(isset($_SESSION["username"])){
-	header("location: message.php?msg=You have logged in");
-    exit();
-}
-?>
-
 <?php
 // Ajax calls this NAME CHECK code to execute
 if(isset($_POST["usernamecheck"])){
@@ -102,7 +92,7 @@ if(isset($_POST["u"])){
 }
 ?>
 
-<!--php for login-->
+
 <?php
     include_once("php_includes/check_login_status.php");
     // If user is already logged in, header that weenis away
@@ -297,7 +287,7 @@ if(isset($_POST["u"])){
             <input type="password" id="password" required autocomplete="off" onfocus="emptyElement('status')" maxlength="100"/>
           </div>
 
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          <p class="forgot"><a href="fp.php">Forgot Password?</a></p>
 
           <button id="loginbtn" class="button button-block" onclick="login()"/>Log In</button>
           <p id="status"></p>

@@ -138,7 +138,7 @@ function restrict(elem){
 	<div class="form">
 	
 			<div class="tab-group">
-				<div class="tab active"><a href="#recover">Recover Password</a></div>
+                <li><div class="tab active"><a style="width:100%" href="#recover">Recover Password</a></div></li>
 			 </div>
 		  <div class="tab-content">
 			<div id="recover">   
@@ -153,6 +153,8 @@ function restrict(elem){
 				  </div>
 				  
 				  <button id="forgotpassbtn"  class="button button-block" onclick="forgotpass()"/>Generate Temp Pwd</button>
+                  <p></p>
+                  <button id="backbtn"  class="button button-block" onclick="window.location.href='login.php'"/>Back</button>
 				  <span id="status" style="display: none"></span>
 			  </form>
 			</div>

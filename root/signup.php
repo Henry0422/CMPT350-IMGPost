@@ -2,7 +2,7 @@
 session_start();
 // If user is logged in, header them away
 if(isset($_SESSION["username"])){
-	header("location: message.php?msg=NO to that weenis");
+	header("location: message.php?msg=You have logged in");
     exit();
 }
 ?>
@@ -162,15 +162,16 @@ if(isset($_POST["u"])){
         } else if( _("terms").style.display == "none"){
             status.innerHTML = "Please view the terms of use";
         } else {
-//            _("signupbtn").style.display = "none";
+            _("signupbtn").style.display = "none";
             status.innerHTML = 'please wait ...';
             var ajax = ajaxObj("POST", "signup.php");
             ajax.onreadystatechange = function() {
                 if(ajaxReturn(ajax) == true) {
-                    if(ajax.responseText != "signup_success"){
+//                    alert(ajax.responseText);
+                    if(ajax.responseText.trim() != "signup_success"){
                         status.innerHTML = ajax.responseText;
-                    } else {
-                        window.scrollTo(0,0);
+                    } 
+                    else {
                         _("signupform").innerHTML = "OK "+u+", check your email inbox and junk mail box at <u>"+e+"</u> in a moment to complete the sign up process by activating your account. You will not be able to do anything on the site until you successfully activate your account.";
                     }
                 }
@@ -182,16 +183,13 @@ if(isset($_POST["u"])){
         _("terms").style.display = "block";
         emptyElement("status");
     }
-    /* function addEvents(){
-        _("elemID").addEventListener("click", func, false);
-    }
-    window.onload = addEvents; */
+
     </script>
 </head>
 
 <body>
 
-  <div class="form">
+  <div class="form" name="entireform" id="entireform" onsubmit="return false;">
 
       <ul class="tab-group">
         <li class="tab active"><a href="#signup">Sign Up</a></li>
@@ -202,7 +200,7 @@ if(isset($_POST["u"])){
         <div id="signup">   
           <h1>Sign Up for Free</h1>
 
-          <form name="signupform" id="signupform" onsubmit="return false;">
+          <form action="/" method="post" name="signupform" id="signupform" onsubmit="return false;">
 
           <div class="field-wrap">
               <label>
