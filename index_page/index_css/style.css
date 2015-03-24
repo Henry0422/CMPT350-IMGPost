@@ -30,7 +30,7 @@ padding:0;
 }
 /*----*/
 .banner{
-background: url(../images/banner.jpg) no-repeat 0px 0px;
+background: url(../index_images/banner.jpg) no-repeat 0px 0px;
 min-height: 780px;
 background-size:cover;
 }
@@ -530,7 +530,7 @@ border-radius: 0;
 /*----start-testmonials----*/
 /*----start-testmonials----*/
 .testmonials{
-	background:#455261;
+	background:#37BC9B;
 }
 .item{
     text-align:center;
@@ -654,7 +654,7 @@ transition: 0.8s;
 .social-media i {
 width: 35px;
 height: 32px;
-background: url(../images/social2.png) no-repeat 0px 0px;
+background: url(../index_images/social2.png) no-repeat 0px 0px;
 display: inline-block;
 margin: 0 0.4em;
 transition: 0.5s all;

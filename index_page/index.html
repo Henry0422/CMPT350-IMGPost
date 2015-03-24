@@ -2,19 +2,19 @@
 <html>
 <head>
 <title>IMGPost - Photo Sharing Notworks</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
-<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
- <script src="js/jquery.easing.min.js"></script>
+<link href="index_css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="index_css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="index_css/style.css" rel="stylesheet" type="text/css" media="all"/>
+ <script src="index_js/jquery.easing.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,800,900,600,200' rel='stylesheet' type='text/css'>
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="Agro Agency Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/jquery.min.js"> </script>
+<script src="index_js/jquery.min.js"> </script>
 <!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="index_js/move-top.js"></script>
+		<script type="text/javascript" src="index_js/easing.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -26,7 +26,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  	<!---- start-smoth-scrolling---->
 
 <!----//requred-js-files---->
-		<script type="text/javascript" 	src="js/jquery.smint.js"></script>
+		<script type="text/javascript" 	src="index_js/jquery.smint.js"></script>
 		<script type="text/javascript">
 			$(document).ready( function() {
 			    $('.subMenu').smint({
@@ -38,63 +38,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!--body-->
-<div class="navigation">
-	 <div class="container">
-		 <div class="fixed-header">
-			 <div class="top-menu">
-				 <ul>
-					 <li ><a class="scroll" href="#home"><b>IMGPost</b></a></li>
-					 <li><a class="scroll" href="#about">ABOUT</a></li>
-					 <li><a class="scroll" href="#gallery">GALLERY</a></li>
-					 <li><a class="scroll" href="#contact">CONTACT</a></li>
-				 </ul>			
-			 </div>
-			 <div class="right-msg">
-                 <ul>
-                     <li><a href="login.php">Login</a></li>
-                 </ul>
-			 </div>
-			 <div class="clearfix"></div>
-		 </div>
-		 <script>
-			$("span.menu").click(function(){
-				$(".top-menu ul").slideToggle(500, function(){
-				});
-			});
-			</script>
+<?php include_once("index_top.php"); ?>
 
-				<!-- script for menu -->
-					<script type="text/javascript">
-					jQuery(document).ready(function($) {
-						$(".scroll").click(function(event){		
-							event.preventDefault();
-							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-						});
-					});
-					</script>
-
-				<!-- script for menu -->
-				<script>
-			 $(document).ready(function() {
-				 var navoffeset=$(".navigation").offset().top;
-				 $(window).scroll(function(){
-					var scrollpos=$(window).scrollTop(); 
-					if(scrollpos >=navoffeset){
-						$(".navigation").addClass("fixed");
-					}else{
-						$(".navigation").removeClass("fixed");
-					}
-				 });
-				 
-			 });
-			 </script>
-	 </div>
-</div>
 <div id="home" class="banner">
 	 <div class="container">
 		 <div class="banner-info">
 			 <div class="logo">
-				 <a href="index.html"><img src="images/logo.png" alt=""/></a>
+				 <a href="index.php"><img src="index_images/logo.png" alt=""/></a>
 			 </div>
              <h1><b>Share your photo here</b></h1>
              <p><b>Easy Sign up today and get connect with others</b></p>
@@ -111,22 +61,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="col-md-3 top-grids">
 				 <span class="glyphicon glyphicon-camera"></span>
 				 <h3>Shutter Release</h3>
-				 <p>Using your mobile devices to record the wonderful moment in your life.</p>
+				 <p>Using your mobile devices to record the wonderful moment in your life. </p>
 			 </div>
 			 <div class="col-md-3 top-grids">
                  <span class="glyphicon glyphicon-upload"></span>
 				 <h3>Upload to IMGPost</h3>
-				 <p>Select their favorite photos and simply upload photos to IMGPost using all kinds of devices. </p>
+				 <p>Select their favorite photos and simply upload photos to IMGPost using all kinds of mobile devices.</p>
 			 </div>
 			 <div class="col-md-3 top-grids">
 				 <span class="glyphicon glyphicon-share"></span>
 				 <h3>Share & Manage</h3>
-				 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet aliquam erat volutpat.</p>
+				 <p>Share your favoriate photos with the public and manage your photos in your personal webpage</p>
 			 </div>
 			 <div class="col-md-3 top-grids">
 				 <span class="glyphicon glyphicon-thumbs-up"></span>
 				 <h3>Like & Commment</h3>
-				 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet aliquam erat volutpat.</p>
+				 <p>Explore IMGPost to easily find everything you're interested in. Join the our photography community, discover thousands of beautiful photos and share your own.</p>
 			 </div>
 			 <div class="clearfix"></div>
 		 </div>
@@ -147,21 +97,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			       <!-- Carousel items -->
 			        <div class="carousel-inner">
 			            <div class="active item">
-			               <img src="images/feature-likeshare.jpg" title="name" />
+			               <img src="index_images/feature-likeshare.jpg" title="name" />
 			                <div class="carousel-caption caption">
 			                  <h3>Get social with your photos </h3>
 			                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 			                </div>
 			            </div>
 			            <div class="item">
-			               <img src="images/feature-people.jpg" title="name" />
+			               <img src="index_images/feature-people.jpg" title="name" />
 			                <div class="carousel-caption caption">
 			                  <h3>Share your photos with friends</h3>
 			                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 			                </div>
 			            </div>
 			            <div class="item">
-			                <img src="images/feature-photos.jpg" title="name" />
+			                <img src="index_images/feature-photos.jpg" title="name" />
 			                <div class="carousel-caption caption">
 			                  <h3>High Res Picture</h3>
 			                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
@@ -181,8 +131,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>Gallery</h3>
 			</div>
 			<!---- start-portfolio-script----->
-			<script src="js/hover_pack.js"></script>
-			<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+			<script src="index_js/hover_pack.js"></script>
+			<script type="text/javascript" src="index_js/jquery.mixitup.min.js"></script>
 			<script type="text/javascript">
 				$(function () {
 					var filterList = {
@@ -223,64 +173,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!----//End-portfolio-script----->
 					<ul id="filters" class="clearfix">
 						<li><span class="filter active" data-filter="app card icon">All</span></li>
-						<li><span class="filter" data-filter="app">Seeds</span></li>
-						<li><span class="filter" data-filter="card">Croping</span></li>
-						<li><span class="filter" data-filter="icon">Development</span></li>
+						<li><span class="filter" data-filter="app">Quebec City</span></li>
+						<li><span class="filter" data-filter="card">Ottawa</span></li>
+						<li><span class="filter" data-filter="icon">Banff Town</span></li>
 					</ul>
 					<div id="portfoliolist">
 					<div class="portfolio app mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						     <img src="index_images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>				
 					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						     <img src="index_images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>		
 					<div class="portfolio card mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						     <img src="index_images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>				
 					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						     <img src="index_images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>	
 					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/p8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						     <img src="index_images/p8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>			
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						     <img src="index_images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>	
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/p7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						     <img src="index_images/p7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>	
 					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
-						     <img src="images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/link-ico.png" alt=""/></h2>
+						     <img src="index_images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>		
@@ -288,13 +238,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 		</div>
 		<!----//End-portfolio---->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="index_js/bootstrap.min.js"></script>
 		<!----start-model-box---->
 						<a data-toggle="modal" data-target=".bs-example-modal-md" href="#"> </a>
 						<div class="modal fade bs-example-modal-md light-box" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 						  <div class="modal-dialog modal-md">
 						    <div class="modal-content light-box-info">
-						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="images/close.png" title="close" /></button>
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="index_images/close.png" title="close" /></button>
 						     <h3>Favriote photos in IMGPost</h3>
 						     <p>These photos are most popular photos from our users. They shot these photo across Canada</p>
 						    </div>
