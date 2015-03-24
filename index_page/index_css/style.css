@@ -408,7 +408,7 @@ padding: 0.5em 2em ;
 	top:0;
 	bottom:0;
 	width:20%;
-	background:rgba(243, 103, 89, 0.8);
+	background:rgba(72, 207, 173, 0.8);
 	transition:all 0.5s linear;
 	-moz-transition:all 0.5s linear;
 	-ms-transition:all 0.5s linear;
@@ -598,7 +598,7 @@ border-radius: 30em;
 	outline:none;
 }
 .text-box input[type="text"]:hover,.textarea textarea:hover,.text-box input[type="text"]:focus,.textarea textarea:focus{
-	border-color: rgba(231, 76, 60, 0.55);
+	border-color: rgba(72, 207, 173, 0.55);
 }
 .textarea textarea{
 	height: 183px;
