@@ -71,12 +71,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="col-md-3 top-grids">
 				 <span class="glyphicon glyphicon-share"></span>
 				 <h3>Share & Manage</h3>
-				 <p>Share your favoriate photos with the public and manage your photos in your personal webpage</p>
+				 <p>Join the our photography community, discoverbeautiful photos and share your own. Manage your photos in your personal webpage</p>
 			 </div>
 			 <div class="col-md-3 top-grids">
 				 <span class="glyphicon glyphicon-thumbs-up"></span>
 				 <h3>Like & Commment</h3>
-				 <p>Explore IMGPost to easily find everything you're interested in. Join the our photography community, discover thousands of beautiful photos and share your own.</p>
+				 <p>Explore IMGPost to easily find everything you're interested in. Click like button and perpaer to relax.</p>
 			 </div>
 			 <div class="clearfix"></div>
 		 </div>
@@ -100,14 +100,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			               <img src="index_images/feature-likeshare.jpg" title="name" />
 			                <div class="carousel-caption caption">
 			                  <h3>Get social with your photos </h3>
-			                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+			                  <p>Your photo is your namecard to let other people know your life, your work and your mood.</p>
 			                </div>
 			            </div>
 			            <div class="item">
 			               <img src="index_images/feature-people.jpg" title="name" />
 			                <div class="carousel-caption caption">
 			                  <h3>Share your photos with friends</h3>
-			                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+			                  <p>Your posting will showing on other people's personal mainpage It is a good way to tell your friend. </p>
 			                </div>
 			            </div>
 			            <div class="item">
