@@ -100,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			               <img src="index_images/feature-likeshare.jpg" title="name" />
 			                <div class="carousel-caption caption">
 			                  <h3>Get social with your photos </h3>
-			                  <p>Your photo is your namecard to let other people know your life, your work and your mood.</p>
+			                  <p>Your photo is your namecard to let other people know your life, your work and your mood. </p>
 			                </div>
 			            </div>
 			            <div class="item">
@@ -114,7 +114,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			                <img src="index_images/feature-photos.jpg" title="name" />
 			                <div class="carousel-caption caption">
 			                  <h3>High Res Picture</h3>
-			                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+			                  <p>All your photo is uploaded and stored in its high resolution format, ready for share with others. </p>
 			                </div>
 			            </div>
 			        </div>
