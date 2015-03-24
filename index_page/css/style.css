@@ -87,7 +87,7 @@ padding: 0.4em 2em;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #cb453a;
+  background: #37BC9B;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50%;
@@ -138,7 +138,7 @@ font-size: 0.95em;
 font-weight: 300;
 }
 .top-menu ul li.active a,.top-menu ul li a:hover{
-color: #E74C3C;
+color: #48CFAD;
 }
 /*----*/
 .top-grid{
@@ -220,7 +220,7 @@ line-height: 1.5em;
 text-decoration:none;
 display:inline-block;
 color:#fff;
-background: #E74C3C;
+background: #48CFAD;
 border-radius:5px;
 font-size: 1.4em;
 padding: 0.5em 2em ;
@@ -299,8 +299,8 @@ padding: 0.5em 2em ;
 		margin-right: 0.5em;
 	}
 	#filters li span.active {
-		background:#E74C3C;
-		border: 2px solid #E74C3C;
+		background:#48CFAD;
+		border: 2px solid #48CFAD;
 		color: #FFF;
 		border-radius: 7px;
 		-webkit-border-radius: 7px;
@@ -620,8 +620,8 @@ border-radius: 30em;
 	padding: 0.8em 0 1em;
 }
 .btn-red-lg{
-	background:#E74C3C;
-	border: 1px solid #E74C3C;
+	background:#48CFAD;
+	border: 1px solid #48CFAD;
 	color:#fff;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -688,7 +688,7 @@ text-align: center;
 .copy-right a {
 margin: 0 0.2em;
 text-decoration: none;
-color: #E74C3C;
+color: #48CFAD;
 }
 /*--responsive--*/
 @media(max-width:1024px){

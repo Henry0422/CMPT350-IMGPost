@@ -293,7 +293,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #E74C3C;
+  color: #48CFAD;
   text-decoration: underline;
 }
 a:focus {
@@ -2306,7 +2306,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #E74C3C;
+  color: #48CFAD;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4164,7 +4164,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #E74C3C;
+  color: #48CFAD;
   background-color: none;
   border-color: #ddd;
 }
