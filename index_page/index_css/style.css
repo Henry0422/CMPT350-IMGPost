@@ -129,6 +129,9 @@ float:right;
 .top-menu ul li{
 display:inline-block;
 }
+.right-msg ul li{
+display:inline-block;
+}
 .top-menu ul li a{
 display:block;
 padding:0 0.5em;
@@ -137,7 +140,18 @@ text-decoration:none;
 font-size: 0.95em;
 font-weight: 300;
 }
+.right-msg ul li a{
+display:block;
+padding:0 0.5em;
+color:#fff;
+text-decoration:none;
+font-size: 0.95em;
+font-weight: 300;
+}
 .top-menu ul li.active a,.top-menu ul li a:hover{
+color: #48CFAD;
+}
+.right-msg ul li.active a,.right-msg ul li a:hover{
 color: #48CFAD;
 }
 /*----*/

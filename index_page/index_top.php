@@ -3,6 +3,9 @@
     if(isset($_GET["fp"])){
 	   $loginLink .= '<li> <a class="current" id="forgot" href="forgot_pass.php">Forgot Password</a></li>';
     }
+    if($user_ok == true) {
+        $loginLink = '<li><a class="nav-link" href="user.php?u='.$log_username.'">'.$log_username.'</a> </li><li> <a class="nav-link" href="logout.php">Log Out</a></li>';
+    }
 ?>
 
 <div class="navigation">
@@ -18,7 +21,7 @@
 			 </div>
 			 <div class="right-msg">
                  <ul>
-                    <?php echo $loginLink; ?>
+                     <li><a><?php echo $loginLink; ?></a></li>
                  </ul>
 			 </div>
 			 <div class="clearfix"></div>

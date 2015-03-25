@@ -1,3 +1,7 @@
+<?php
+include_once("php_includes/check_login_status.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -163,8 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								}		
 							);				
 						
-						}
-			
+						}			
 					};
 					// Run the show!
 					filterList.init();
@@ -178,7 +181,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><span class="filter" data-filter="icon">Banff Town</span></li>
 					</ul>
 					<div id="portfoliolist">
-					<div class="portfolio app mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+					<div class="portfolio card mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="index_images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
@@ -199,35 +202,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  	</div></a>
 		                </div>
 					</div>				
-					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+					<div class="portfolio card mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="index_images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>	
-					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+					<div class="portfolio icon mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="index_images/p8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>			
-					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+					<div class="portfolio app mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="index_images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>	
-					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+					<div class="portfolio icon mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="index_images/p7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
 						  	</div></a>
 		                </div>
 					</div>	
-					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+					<div class="portfolio card mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
 						<div class="portfolio-wrapper">		
 							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="index_images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="index_images/link-ico.png" alt=""/></h2>
