@@ -53,7 +53,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 <div class="container">
 		 <div class="banner-info">
 			 <div class="logo">
-				 <a href="index.php"><img src="index_images/logo.png" alt=""/></a>
+				 <a href="index.php"><img src="index_images/logo1.png" alt="" height="96" width="96"/></a>
 			 </div>
              <h1><b>Share your photo here</b></h1>
              <p><b>Easy Sign up today and get connect with others</b></p>
