@@ -2,6 +2,11 @@
 include_once("php_includes/check_login_status.php");
 ?>
 
+<?php
+    session_start(); 
+    $_SESSION['previous_location'] = 'index.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
