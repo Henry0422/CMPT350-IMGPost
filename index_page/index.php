@@ -15,7 +15,7 @@ include_once("php_includes/check_login_status.php");
 <link href="index_css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="index_css/style.css" rel="stylesheet" type="text/css" media="all"/>
  <script src="index_js/jquery.easing.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,800,900,600,200' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open Sans:400,100,300,500,700,800,900,600,200' rel='stylesheet' type='text/css'>
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="Agro Agency Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />

@@ -4,12 +4,12 @@
 	License: Creative Commons Attribution 3.0 Unported
 	License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700,800,900,600,200);
+@import url(http://fonts.googleapis.com/css?family=Open Sans:400,100,300,500,700,800,900,600,200);
 body{
 	margin:0;
 	padding:0;
 	background:#fff;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
  }
 body a{
 	transition:0.5s all;
