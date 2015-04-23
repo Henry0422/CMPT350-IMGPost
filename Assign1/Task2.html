@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Task B</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <style type="text/css">
+      html, body{
+        height: 90%;
+        width:100%;
+        margin-left:0px;
+        margin-top:0px;
+        padding: 0px
+      }
+        
+        #map-canvas {
+        height: 100%;
+        margin-left:0px;
+        margin-top:-20px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    <script type="text/javascript">
+        // Note: This example requires that you consent to location sharing when
+        // prompted by your browser. If you see a blank space instead of the map, this
+        // is probably because you have denied permission for location sharing.
+
+        var map;
+
+        function initialize() {
+          var mapOptions = {
+            zoom: 12,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          map = new google.maps.Map(document.getElementById('map-canvas'),
+              mapOptions);
+
+          // Try HTML5 geolocation
+          if(navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              var pos = new google.maps.LatLng(position.coords.latitude,
+                                               position.coords.longitude);
+
+                var marker = new google.maps.Marker({
+                position: pos,
+                map: map,
+                title: 'Hello World!'
+                });
+                
+              map.setCenter(pos);
+            }, function() {
+              handleNoGeolocation(true);
+            });
+          } else {
+            // Browser doesn't support Geolocation
+            handleNoGeolocation(false);
+          }
+            
+        }
+
+        function handleNoGeolocation(errorFlag) {
+          if (errorFlag) {
+            var content = 'Error: The Geolocation service failed.';
+          } else {
+            var content = 'Error: Your browser doesn\'t support geolocation.';
+          }
+
+          var options = {
+            map: map,
+            position: new google.maps.LatLng(60, 105)
+          };
+
+          map.setCenter(options.position);
+          document.write(content);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+      
+      <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  </head>
+  <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Assign1</a>
+                </div>
+                <div>
+                  <ul class="nav navbar-nav">
+                    <li><a href="Task1.html">Task 1</a></li>
+                    <li><a href="Task2.html">Task 2</a></li> 
+                    <li><a href="Task3.html">Task 3</a></li> 
+                    <li><a href="Task4.html">Task 4</a></li> 
+                    <li><a href="Task5.html">Task 5</a></li>
+                    <li><a href="README.txt">Readme File</a></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    <div id="map-canvas" class="col-md-10" ></div>
+        <p id="demo" class="col-md-2" class="panel-group"></p>
+
+        <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;	
+        }
+
+        getLocation();
+        </script>
+  </body>
+</html>

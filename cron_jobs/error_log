@@ -1,0 +1,1 @@
+[10-Apr-2015 00:00:06 America/Denver] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home7/skcnca/public_html/php_includes/db_connect.php on line 2

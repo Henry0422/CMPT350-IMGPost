@@ -1,0 +1,117 @@
+[19-Mar-2015 19:59:37 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 19:59:37 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 19:59:37 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[19-Mar-2015 19:59:37 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[19-Mar-2015 19:59:37 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[19-Mar-2015 19:59:46 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 19:59:46 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 19:59:46 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[19-Mar-2015 19:59:46 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[19-Mar-2015 19:59:46 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[19-Mar-2015 20:00:22 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:00:22 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:00:22 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[19-Mar-2015 20:00:22 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[19-Mar-2015 20:00:22 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[19-Mar-2015 20:05:39 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:05:39 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:05:39 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[19-Mar-2015 20:05:39 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[19-Mar-2015 20:05:39 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[19-Mar-2015 20:12:38 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:12:38 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:12:38 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[19-Mar-2015 20:12:38 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[19-Mar-2015 20:12:38 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[19-Mar-2015 20:12:57 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:12:57 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:12:57 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[19-Mar-2015 20:12:57 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[19-Mar-2015 20:12:57 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[19-Mar-2015 20:16:59 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:16:59 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:16:59 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[19-Mar-2015 20:16:59 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[19-Mar-2015 20:16:59 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[19-Mar-2015 20:50:04 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:50:04 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[19-Mar-2015 20:50:04 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[19-Mar-2015 20:50:04 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[19-Mar-2015 20:50:04 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[20-Mar-2015 11:36:57 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 11:36:57 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 11:36:57 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[20-Mar-2015 11:36:57 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[20-Mar-2015 11:36:57 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[20-Mar-2015 11:37:44 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 11:37:44 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 11:37:44 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[20-Mar-2015 11:37:44 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[20-Mar-2015 11:37:44 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[20-Mar-2015 11:42:45 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 11:42:45 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 11:42:45 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[20-Mar-2015 11:42:45 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[20-Mar-2015 11:42:45 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[20-Mar-2015 12:49:05 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 12:49:05 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 12:49:05 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[20-Mar-2015 12:49:05 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[20-Mar-2015 12:49:05 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[20-Mar-2015 13:17:13 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 13:17:13 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 13:17:13 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[20-Mar-2015 13:17:13 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[20-Mar-2015 13:17:13 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[20-Mar-2015 14:00:43 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 14:00:43 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 14:00:43 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[20-Mar-2015 14:00:43 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[20-Mar-2015 14:00:43 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[20-Mar-2015 14:02:40 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 14:02:40 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 14:02:40 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[20-Mar-2015 14:02:40 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[20-Mar-2015 14:02:40 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[20-Mar-2015 14:02:49 America/Denver] PHP Warning:  include_once(php_includes/db_connect.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 14:02:49 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/db_connect.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/php_includes/check_login_status.php on line 3
+[20-Mar-2015 14:02:49 America/Denver] PHP Notice:  Undefined variable: db_connect in /home7/skcnca/public_html/php_includes/check_login_status.php on line 25
+[20-Mar-2015 14:02:49 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 14
+[20-Mar-2015 14:02:49 America/Denver] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_includes/check_login_status.php on line 15
+[20-Mar-2015 14:03:23 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home7/skcnca/public_html/php_parsers/friend_system.php on line 8
+[20-Mar-2015 14:03:44 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home7/skcnca/public_html/php_parsers/friend_system.php on line 8
+[20-Mar-2015 14:04:22 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home7/skcnca/public_html/php_parsers/friend_system.php on line 8
+[20-Mar-2015 14:09:39 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home7/skcnca/public_html/php_parsers/friend_system.php on line 8
+[20-Mar-2015 14:12:47 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home7/skcnca/public_html/php_parsers/friend_system.php on line 8
+[20-Mar-2015 14:20:25 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home7/skcnca/public_html/php_parsers/friend_system.php on line 8
+[20-Mar-2015 14:29:35 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home7/skcnca/public_html/php_parsers/friend_system.php on line 8
+[24-Mar-2015 21:44:46 America/Denver] PHP Notice:  Undefined variable: db_conx in /home7/skcnca/public_html/php_parsers/friend_system.php on line 103
+[24-Mar-2015 21:44:46 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_parsers/friend_system.php on line 103
+[24-Mar-2015 21:44:46 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_parsers/friend_system.php on line 104
+[24-Mar-2015 21:44:46 America/Denver] PHP Notice:  Undefined variable: db_conx in /home7/skcnca/public_html/php_parsers/friend_system.php on line 106
+[24-Mar-2015 21:44:46 America/Denver] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_parsers/friend_system.php on line 106
+[24-Mar-2015 21:46:48 America/Denver] PHP Notice:  Undefined variable: db_conx in /home7/skcnca/public_html/php_parsers/friend_system.php on line 103
+[24-Mar-2015 21:46:48 America/Denver] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_parsers/friend_system.php on line 103
+[24-Mar-2015 21:46:48 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, null given in /home7/skcnca/public_html/php_parsers/friend_system.php on line 104
+[24-Mar-2015 21:46:48 America/Denver] PHP Notice:  Undefined variable: db_conx in /home7/skcnca/public_html/php_parsers/friend_system.php on line 106
+[24-Mar-2015 21:46:48 America/Denver] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home7/skcnca/public_html/php_parsers/friend_system.php on line 106
+[26-Mar-2015 23:02:24 America/Denver] PHP Warning:  imagecreatefrompng(): '../user/tmpuser1/780226484173.png' is not a valid PNG file in /home7/skcnca/public_html/php_includes/image_resize.php on line 15
+[26-Mar-2015 23:02:24 America/Denver] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home7/skcnca/public_html/php_includes/image_resize.php on line 21
+[06-Apr-2015 00:25:11 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 139
+[06-Apr-2015 00:42:45 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 139
+[06-Apr-2015 00:50:30 America/Denver] PHP Fatal error:  Call to undefined function alert() in /home7/skcnca/public_html/php_parsers/photo_system.php on line 137
+[06-Apr-2015 00:52:32 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 141
+[06-Apr-2015 01:08:58 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 145
+[06-Apr-2015 01:19:49 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 145
+[06-Apr-2015 01:25:44 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 155
+[06-Apr-2015 01:26:01 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 155
+[06-Apr-2015 01:26:26 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 155
+[06-Apr-2015 01:29:03 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 155
+[06-Apr-2015 11:46:57 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 149
+[06-Apr-2015 15:04:57 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 149
+[07-Apr-2015 10:15:21 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 149
+[07-Apr-2015 10:25:46 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 149
+[07-Apr-2015 10:26:09 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 149
+[07-Apr-2015 10:27:33 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 150
+[07-Apr-2015 10:36:21 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 152
+[07-Apr-2015 10:38:19 America/Denver] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, boolean given in /home7/skcnca/public_html/php_parsers/photo_system.php on line 151
