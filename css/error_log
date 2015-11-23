@@ -1,4 +1,0 @@
-[16-Mar-2015 15:12:08 America/Denver] PHP Warning:  include_once(php_includes/check_login_status.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/css/user.php on line 2
-[16-Mar-2015 15:12:08 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/check_login_status.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/css/user.php on line 2
-[18-Mar-2015 22:06:16 America/Denver] PHP Warning:  include_once(php_includes/check_login_status.php): failed to open stream: No such file or directory in /home7/skcnca/public_html/css/user.php on line 2
-[18-Mar-2015 22:06:16 America/Denver] PHP Warning:  include_once(): Failed opening 'php_includes/check_login_status.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home7/skcnca/public_html/css/user.php on line 2
