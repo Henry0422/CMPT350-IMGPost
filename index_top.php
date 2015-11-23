@@ -8,8 +8,9 @@
     }
 ?>
 
-    <div class="navigation">
-        <div class="container">
+<div class="navigation">
+    <div class="container">
+        <div class="fixed-header">
             <button type="button" class="right-msg navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>  
                 <span class="icon-bar"></span>  
@@ -23,43 +24,43 @@
                      <li><a class="scroll" href="#gallery">GALLERY</a></li>
                      <li><a class="scroll" href="#contact">CONTACT</a></li>
                 </ul>	
-				<ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
                         <li><a><?php echo $loginLink; ?></a></li>
-                   </ul>
+                </ul>
             </div>
-            </div>
-         
-		    <script>
-			$("span.menu").click(function(){
-				$(".top-menu ul").slideToggle(500, function(){
-				});
-			});
-			</script>
+        </div>
+    </div>
+
+        <script>
+        $("span.menu").click(function(){
+            $(".top-menu ul").slideToggle(500, function(){
+            });
+        });
+        </script>
+
+        <!-- script for menu -->
+        <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){		
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+        </script>
 
             <!-- script for menu -->
-            <script type="text/javascript">
-            jQuery(document).ready(function($) {
-                $(".scroll").click(function(event){		
-                    event.preventDefault();
-                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-                });
-            });
-            </script>
+        <script  type="text/javascript">
+        $(document).ready(function() {
+         var navoffeset=$(".navigation").offset().top;
+         $(window).scroll(function(){
+            var scrollpos=$(window).scrollTop(); 
+            if(scrollpos >=navoffeset){
+                $(".navigation").addClass("fixed");
+            }else{
+                $(".navigation").removeClass("fixed");
+            }
+         });
 
-				<!-- script for menu -->
-            <script  type="text/javascript">
-            $(document).ready(function() {
-             var navoffeset=$(".navigation").offset().top;
-             $(window).scroll(function(){
-                var scrollpos=$(window).scrollTop(); 
-                if(scrollpos >=navoffeset){
-                    $(".navigation").addClass("fixed");
-                }else{
-                    $(".navigation").removeClass("fixed");
-                }
-             });
-
-            });
-            </script>
-	 </div>
+        });
+        </script>
 </div>

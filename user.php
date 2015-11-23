@@ -6,6 +6,7 @@ $sex = "Male";
 $userlevel = "";
 $profile_pic = "";
 $profile_pic_btn = "";
+//avatar is profile photo
 $avatar_form = "";
 $country = "";
 $joindate = "";
@@ -14,7 +15,7 @@ $lastsession = "";
 if(isset($_GET["u"])){
 	$u = preg_replace('#[^a-z0-9]#i', '', $_GET['u']);
 } else {
-    header("location: http://www.skchn.ca/index.html");
+    header("location: http://www.theimgpost.com/index.php");
     exit();	
 }
 // Select the member from the users table
@@ -32,10 +33,12 @@ $isOwner = "no";
 if($u == $log_username && $user_ok == true){
 	$isOwner = "yes";
 	$profile_pic_btn = '<a href="#" onclick="return false;" onmousedown="toggleElement(\'avatar_form\')">Edit</a>';
+    //avatar is profile photo
 	$avatar_form  = '<form id="avatar_form" enctype="multipart/form-data" method="post" action="php_parsers/photo_system.php">';
-	$avatar_form .=   '<h4>Change your avatar</h4>';
+	$avatar_form .=   '<h4>Change your profile photo</h4>';
 	$avatar_form .=   '<input type="file" name="avatar" required>';
-	$avatar_form .=   '<p><input type="submit" value="Upload"></p>';
+	$avatar_form .=   '</br><p><input type="submit" value="Upload"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="submit" onmousedown="toggleElement(\'avatar_form\').close()" value="Cancel"></p>';
 	$avatar_form .= '</form>';
 }
 // Fetch the user row from the query above
@@ -43,6 +46,7 @@ while ($row = mysqli_fetch_array($user_query, MYSQLI_ASSOC)) {
 	$profile_id = $row["id"];
 	$gender = $row["gender"];
 	$userlevel = $row["userlevel"];
+    //avatar is profile photo
 	$avatar = $row["avatar"];
 	$signup = $row["signup"];
 	$lastlogin = $row["lastlogin"];
@@ -251,8 +255,7 @@ if(mysqli_num_rows($query) < 1){
 		}
 		
 		.foot{
-			position:fixed;
-			height:60px;
+			height:40px;
 			bottom:0px;
 			left:0px;
 			right:0px;
@@ -337,15 +340,12 @@ function friendToggle(type,user,elem){
 	_(elem).innerHTML = 'please wait ...';
 	var ajax = ajaxObj("POST", "php_parsers/friend_system.php");
 	ajax.onreadystatechange = function() {
-        alert(ajaxReturn(ajax));
 		if(ajaxReturn(ajax) == true) {
             
 			if(ajax.responseText.trim() == "friend_request_sent"){
-                alert("in friend_request_sent");
 				_(elem).innerHTML = 'OK Friend Request Sent';
 			} 
             else if(ajax.responseText.trim() == "unfriend_ok"){
-                alert("in unfriend_ok");
 				_(elem).innerHTML = '<button onclick="friendToggle(\'friend\',\'<?php echo $u; ?>\',\'friendBtn\')">Request As Friend</button>';
 			}
             else if(ajax.responseText.trim() == "<?php echo $u; ?> currently has the maximum number of friends, and cannot accept more."){
@@ -367,7 +367,6 @@ function friendToggle(type,user,elem){
                  _(elem).innerHTML = '<?php echo $u; ?> has requested to friend with you first. Check your friend requests.';   
             }
             else {
-				alert(ajax.responseText.trim());
 				_(elem).innerHTML = 'Try again later';
 			}
 		}
@@ -389,7 +388,6 @@ function blockToggle(type,blockee,elem){
 			} else if(ajax.responseText.trim() == "unblocked_ok"){
 				elem.innerHTML = '<button onclick="blockToggle(\'block\',\'<?php echo $u; ?>\',\'blockBtn\')">Block User</button>';
 			} else {
-				alert(ajax.responseText);
 				elem.innerHTML = 'Try again later';
 			}
 		}
@@ -414,6 +412,7 @@ function blockToggle(type,blockee,elem){
 						<?php echo $profile_pic; ?>
 						<?php echo $profile_pic_btn; ?>
 						<div id="profile_pic_box">
+                            <!--avatar is profile photo-->
 							<?php echo $avatar_form; ?>
 						</div>
 					</div>
@@ -466,7 +465,11 @@ function blockToggle(type,blockee,elem){
 				<div class="panel-body">
 					<?php 
 						echo $friendsHTML; 
-						echo $u." has ".$friend_count." friends.";
+                    ?>
+                </div>
+                <div class="panel-body">
+                    <?php
+						echo $u." has ".$friend_count." friends  ";
 						echo $friends_view_all_link; 
 					?>
 				</div>
@@ -475,8 +478,7 @@ function blockToggle(type,blockee,elem){
 		</div>
 		
 		<div class="col-md-8 col-xs-12">
-			
-				<?php include_once("template_status.php"); ?>
+			<?php include_once("template_status.php"); ?>
 		</div>
 		
         <div class="col-md-4">

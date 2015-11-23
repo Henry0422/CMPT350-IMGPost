@@ -1,8 +1,8 @@
 <?php
     include_once("php_includes/check_login_status.php");
-    // If user is already logged in, header that weenis away
+    // If user is already logged in, redirect them
     if($user_ok == true){
-		//alert("user ok fired");
+		//alert("user OK");
         header("location: user.php?u=".$_SESSION["username"]);
         exit();
     }

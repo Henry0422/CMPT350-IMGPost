@@ -25,6 +25,7 @@ if($isOwner == "yes"){
 								<form id="photo_form" enctype="multipart/form-data" method="post" action="php_parsers/photo_system.php">
 								<input type="file" name="photo" accept="image/*" required>
 								<input name="gallery" value="post" style="display:none">
+                                </br>
                                 <textarea class="form-control" name="description" onkeyup="statusMax(this,250)" placeholder="Add photo Description..."></textarea><br>
 								<button class="btn btn-success btn-block" type="submit">Upload Photo Now</button>
 								</form>

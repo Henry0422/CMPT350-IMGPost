@@ -18,7 +18,7 @@ $lastsession = "";
 if(isset($_GET["u"])){
 	$u = preg_replace('#[^a-z0-9]#i', '', $_GET['u']);
 } else {
-    header("location: http://www.skchn.ca/index.html");
+    header("location: http://www.theimgpost.com/index.html");
     exit();	
 }
 

@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 </div>
              <h1><b>Share your photo here</b></h1>
              <p><b>Easy Sign up today and get connect with others</b></p>
-			 <a class="hvr-shutter-out-vertical button" href="#">Sign Up</a>
+			 <a class="hvr-shutter-out-vertical button" href="signup.php">Sign Up</a>
 		</div>
 	 </div>
 </div>
@@ -280,7 +280,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <input class="btn-red-lg" type="submit" value="Submit Message" />
 			  </form>
 		  </div>
-
+</br>
 <div class="copy-right">
 		<p>Copyright &#169; 2015 <span>IMGPost</span> All Rights Reserved.</p>
 </div>

@@ -89,9 +89,9 @@ if(isset($_POST["u"])){
 		}
 		// Email the user their activation link
 		$to = "$e";							 
-		$from = "auto_responder@skchn.ca";
+		$from = "auto_responder@theimgpost.com";
 		$subject = 'IMGPost Account Activation';
-		$message = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>IMGPost Message</title></head><body style="margin:0px; font-family:Tahoma, Geneva, sans-serif;"><div style="padding:10px; background:#333; font-size:24px; color:#CCC;"><a href="http://www.skchn.ca"><img src="http://www.skchn.ca/images/logo.png" width="36" height="30" alt="IMGPost" style="border:none; float:left;"></a>IMGPost Account Activation</div><div style="padding:24px; font-size:17px;">Hello '.$u.',<br /><br />Click the link below to activate your account when ready:<br /><br /><a href="http://www.skchn.ca/activation.php?id='.$uid.'&u='.$u.'&e='.$e.'&p='.$p_hash.'">Click here to activate your account now</a><br /><br />Login after successful activation using your:<br />* E-mail Address: <b>'.$e.'</b></div></body></html>';
+		$message = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>IMGPost Message</title></head><body style="margin:0px; font-family:Tahoma, Geneva, sans-serif;"><div style="padding:10px; background:#333; font-size:24px; color:#CCC;"><a href="http://www.theimgpost.com"><img src="http://www.theimgpost.com/images/logo.png" width="36" height="30" alt="IMGPost" style="border:none; float:left;"></a>IMGPost Account Activation</div><div style="padding:24px; font-size:17px;">Hello '.$u.',<br /><br />Click the link below to activate your account when ready:<br /><br /><a href="http://www.theimgpost.com/activation.php?id='.$uid.'&u='.$u.'&e='.$e.'&p='.$p_hash.'">Click here to activate your account now</a><br /><br />Login after successful activation using your:<br />* E-mail Address: <b>'.$e.'</b></div></body></html>';
 		$headers = "From: $from\n";
         $headers .= "MIME-Version: 1.0\n";
         $headers .= "Content-type: text/html; charset=iso-8859-1\n";

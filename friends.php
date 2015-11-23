@@ -2,7 +2,7 @@
 include_once("php_includes/check_login_status.php");
 
 if($user_ok != true || $log_username == ""){
-	header("location: http://www.skchn.ca/index.php");
+	header("location: http://www.theimgpost.com/index.php");
     exit();
 }
 // Initialize any variables that the page might echo
@@ -19,7 +19,7 @@ $lastsession = "";
 if(isset($_GET["u"])){
 	$u = preg_replace('#[^a-z0-9]#i', '', $_GET['u']);
 } else {
-    header("location: http://www.skchn.ca/index.html");
+    header("location: http://www.theimgpost.com/index.html");
     exit();	
 }
 // Select the member from the users table
